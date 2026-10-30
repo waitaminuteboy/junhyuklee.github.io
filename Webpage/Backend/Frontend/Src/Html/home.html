@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junhyuk Lee | Portfolio</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="../Css/home.css" />
+    <!-- Start downloading the featured project early so it opens instantly -->
+    <link rel="prefetch" href="forceplate.html" />
+</head>
+<body>
+    <section class="content">
+        <div class="content__header">
+          <h2>My Portfolio</h2>
+        </div>
+
+        <!-- Featured project: my biggest activity, so it's the first thing on the page -->
+        <a href="forceplate.html" class="featured">
+          <div class="featured__text">
+            <p class="featured__eyebrow">★ Featured project · Patent research</p>
+            <h3 class="featured__title">A more affordable yet accurate force plate</h3>
+            <p class="featured__summary">Repeated basketball injuries led me to design a cheaper force plate. I filed a patent application, tested the design with simulations at KAIST, and built a working prototype with Holiday Robotics for about $2,700 in parts.</p>
+            <ul class="featured__milestones">
+              <li>Patent application filed</li>
+              <li>FEM study at KAIST</li>
+              <li>Prototype built &amp; tested</li>
+            </ul>
+            <span class="featured__cta">Explore the full journey <span class="featured__arrow">→</span></span>
+          </div>
+          <div class="featured__media">
+            <img src="../../Images/forceplate/assembled-plate.jpg" alt="The assembled force plate prototype wired to its electronics">
+          </div>
+        </a>
+
+        <div class="content__text">
+          <p class="highlight">"Learn as if you will live forever, live like you will die tomorrow."</p>
+        </div>
+
+        <div class="container">
+          <h1>Self intro</h1>
+          <div class="intro-card">
+              <img class="intro-card__photo" src="../../Images/profile.jpg" alt="Portrait of Junhyuk Lee">
+              <div class="intro-card__text">
+                  <h3>Junhyuk Lee</h3>
+                  <p class="intro-card__role">Aspiring engineer</p>
+                  <p>I enjoy working with my hands and turning ideas into tangible creations that can make a difference in the real world.</p>
+              </div>
+          </div>
+
+          <h1>Other interests and activities</h1>
+          <!-- Activity cards, in the same order as the Drive folders (A→Z) -->
+          <div class="cards">
+              <a href="cicclub.html" class="card" style="--bg: url(../../Images/activities/cic-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">CIC Club</h2>
+                      <p class="card__copy">Leading 25+ members in service at Korea’s heritage sites. Grand Prize &amp; Minister’s Award, 2025.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="honorbands.html" class="card" style="--bg: url(../../Images/activities/bands-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">Honor Bands</h2>
+                      <p class="card__copy">First-chair bass clarinet in the KIMEA and AMIS honor bands.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="awards.html" class="card" style="--bg: url(../../Images/activities/honors-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">Honors and awards</h2>
+                      <p class="card__copy">Recognition in mathematics, science, business, music and service.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="internships.html" class="card" style="--bg: url(../../Images/activities/intern-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">Internships</h2>
+                      <p class="card__copy">Job shadowing at VALD Performance and interning at Holiday Robotics.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="jazzband.html" class="card" style="--bg: url(../../Images/activities/jazz-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">Jazz Band</h2>
+                      <p class="card__copy">Leading the 15-musician J’Blu Jazz Band from the first saxophone chair.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="pioneer.html" class="card" style="--bg: url(../../Images/pioneer/setup.png); --bg-pos: center">
+                  <div class="card__content">
+                      <h2 class="card__title">Pioneer Research</h2>
+                      <p class="card__copy">Testing whether basketball shoe outsoles wear the way Archard’s law predicts.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+              <a href="tasteofsongdo.html" class="card" style="--bg: url(../../Images/activities/taste-banner.jpg)">
+                  <div class="card__content">
+                      <h2 class="card__title">Taste of Songdo</h2>
+                      <p class="card__copy">Sharing Korean food culture: 100+ kimchi makers and about 100 kg donated every year.</p>
+                      <span class="card__btn">Learn more</span>
+                  </div>
+              </a>
+          </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="../Js/home.js"></script>
+</body>
+</html>

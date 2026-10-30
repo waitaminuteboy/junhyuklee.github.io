@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Research | Junhyuk Lee</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="../Css/page.css" />
+</head>
+<body>
+    <div class="progress" aria-hidden="true"></div>
+    <a class="back-link" href="home.html">← Back to portfolio</a>
+
+    <main class="page">
+      <header class="hero hero--banner">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Research · Pioneer Research Institute · August 2026</p>
+          <h1 class="hero__title reveal">Testing Archard’s wear law on basketball shoes</h1>
+          <p class="hero__lead reveal">Does the outsole rubber of a basketball shoe wear down in proportion to the load on it, as Archard’s law predicts for metals?</p>
+          <ul class="chips reveal">
+            <li>Researcher · Grades 11–12</li>
+            <li>Graded A</li>
+            <li>Submitted to the Pioneer Journal</li>
+          </ul>
+        </div>
+        <figure class="hero__banner hero__banner--contain reveal">
+          <img src="../../Images/pioneer/setup.png" alt="Hand-drawn diagram of the experimental setup: an outsole sample pressed onto a belt sander by a dead weight">
+        </figure>
+      </header>
+
+      <!-- Evaluation -->
+      <section class="chapter" id="evaluation">
+        <div class="grade reveal">
+          <span class="grade__letter" aria-hidden="true">A</span>
+          <div class="grade__text">
+            <p class="eyebrow">Evaluation</p>
+            <h2 class="grade__title">Graded A, the highest grade</h2>
+            <p class="muted">My research paper received a grade of A from my professor at the Pioneer Research Institute, under a grading rubric approved by Pioneer Academics and Oberlin College.</p>
+            <p class="grade__meta">Research concentration: Analysis of Material Failure</p>
+          </div>
+          <figure class="figure grade__evidence">
+            <img src="../../Images/pioneer/evaluation-form.png" alt="Pioneer Research Institute evaluation form showing a grade of A for the paper Testing Archard’s Wear Law for Basketball Shoe’s sole Rubber">
+            <figcaption>Pioneer Research Institute evaluation form (click to enlarge)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Aim and background -->
+      <section class="chapter" id="aim">
+        <p class="eyebrow reveal">Aim of the study</p>
+        <h2 class="chapter__title reveal">Why outsole wear matters</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="lead reveal">A basketball shoe “wears out” long before it falls apart. As the outsole slides against the court, its tread edges round over and flatten, and the shoe loses traction, the property most strongly linked to athletic performance.</p>
+            <p class="muted reveal">This kind of abrasive wear is usually described by Archard’s wear law: the volume of material removed grows in proportion to the load and the distance slid. But the law was developed for metals, and earlier studies on rubber disagree about whether it holds.</p>
+          </div>
+          <p class="callout reveal"><span>Research question</span>Does the wear rate of basketball shoe outsole rubber increase linearly with normal load, and what specific wear rate, k, characterises it?</p>
+        </div>
+      </section>
+
+      <!-- Method -->
+      <section class="chapter" id="method">
+        <p class="eyebrow reveal">Methods</p>
+        <h2 class="chapter__title reveal">Sanding a Nike Zion 3 outsole</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="lead reveal">I cut samples of about 5 × 5 cm from the outsole of a Nike Zion 3, a 2023 signature shoe that combines a solid herringbone rubber with a translucent radial pattern.</p>
+            <p class="muted reveal">Each sample, mounted on cardboard, was pressed onto a 100-grit belt sander with dead weights for 30 seconds. I weighed it before and after each trial and converted the lost mass into a specific wear rate using the rubber’s density (1.48 g/cm³, measured by water displacement). A fresh belt was used for every new load.</p>
+          </div>
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/pioneer/setup.png" alt="Experimental setup: the outsole sample on cardboard backing, pressed by a dead weight onto a 100-grit belt sander" loading="lazy">
+            <figcaption>Figure 1. Experimental setup (drawn by me)</figcaption>
+          </figure>
+        </div>
+        <div class="results">
+          <div class="results__grid">
+            <div class="result-card reveal">
+              <span class="result-card__value"><span data-count="5">5</span> loads</span>
+              <span class="result-card__label">From 4.9 N to 24.5 N</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value"><span data-count="25">25</span> trials</span>
+              <span class="result-card__label">Five repeats at each load</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value"><span data-count="735">735</span> m</span>
+              <span class="result-card__label">Sliding distance per 30-second trial</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value">24.5 m/s</span>
+              <span class="result-card__label">Belt speed</span>
+            </div>
+          </div>
+        </div>
+        <p class="equation reveal">k<sub>s</sub> = Δm / (ρ · F<sub>N</sub> · s)</p>
+        <p class="muted muted--center reveal">If Archard’s law holds, k<sub>s</sub> should be the same at every load.</p>
+      </section>
+
+      <!-- Results -->
+      <section class="chapter" id="results">
+        <p class="eyebrow reveal">Results</p>
+        <h2 class="chapter__title reveal">The wear rate was not constant</h2>
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <caption>Table 1. Mass loss, wear rate, and specific wear rate by load</caption>
+            <thead>
+              <tr><th>F<sub>N</sub> (N)</th><th>Average Δm (g)</th><th>Q (mm³/m)</th><th>CV (%)</th><th>k<sub>s</sub> (mm³/(N·m))</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>4.9</td><td>0.051</td><td>0.047</td><td>7.5</td><td>0.0096</td></tr>
+              <tr><td>9.8</td><td>0.078</td><td>0.072</td><td>5.5</td><td>0.0073</td></tr>
+              <tr><td>14.7</td><td>0.213</td><td>0.196</td><td>4.9</td><td>0.0133</td></tr>
+              <tr><td>19.6</td><td>0.504</td><td>0.463</td><td>3.0</td><td>0.0236</td></tr>
+              <tr><td>24.5</td><td>0.827</td><td>0.760</td><td>2.9</td><td>0.0310</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="figure figure--contain figure--spaced reveal">
+          <img src="../../Images/pioneer/results-charts.png" alt="Charts: (a) wear rate against load on log axes with a power-law fit of n = 1.79 versus Archard's n = 1; (b) specific wear rate rising from about 0.007 to 0.031 as load increases" loading="lazy">
+          <figcaption>Figure 2. (a) Wear rate Q = V/s against normal load. (b) Specific wear rate k<sub>s</sub> against load. Charts generated with Claude (Anthropic), as noted in the paper.</figcaption>
+        </figure>
+        <div class="results">
+          <div class="results__grid">
+            <div class="result-card reveal">
+              <span class="result-card__value">About 4×</span>
+              <span class="result-card__label">Rise in k<sub>s</sub>, from 0.007 mm³/(N·m) at 9.8 N to 0.031 at 24.5 N</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value">n = 1.79</span>
+              <span class="result-card__label">Wear-load exponent across all loads (95% CI 1.56–2.02). Archard predicts n = 1.</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value">n = 2.62</span>
+              <span class="result-card__label">Exponent for the four heavier loads (95% CI 2.53–2.70)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discussion -->
+      <section class="chapter chapter--dark" id="discussion">
+        <p class="eyebrow reveal">Discussion</p>
+        <h2 class="chapter__title reveal">Why rubber breaks the law</h2>
+        <p class="lead lead--wide reveal">The outsole wore super-linearly: faster than the load increased. An exponent approaching three is typical of a harsher wear mode, where rubber is torn away in larger fragments once the stress at the raised tread points passes its resistance to tearing.</p>
+        <p class="mint-line reveal">Archard’s law assumes the contact points deform plastically, like metal. Rubber deforms elastically and springs back, so the law’s central assumption doesn’t carry over.</p>
+        <p class="reveal">The measured rates sit in the upper range recorded for elastomers. That fits a coarse sanding belt and a fairly soft compound (about 77 Shore C).</p>
+      </section>
+
+      <!-- Limitations and conclusion -->
+      <section class="chapter" id="conclusion">
+        <p class="eyebrow reveal">Limitations and conclusion</p>
+        <h2 class="chapter__title reveal">What the study can and can’t say</h2>
+        <div class="split split--top">
+          <div class="reveal">
+            <h3 class="subhead">Limitations</h3>
+            <p class="muted">The biggest gap is surface temperature, which I didn’t measure. Friction heating grows with load, and warmer rubber wears more easily, so heat alone could produce a similar super-linear trend. The study also used one belt speed and one abrasive, and assumed every sample had the same true contact area.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="subhead">Conclusion</h3>
+            <p class="muted">Across the loads tested, the Zion 3 outsole did not wear in proportion to the force on it, so Archard’s law is rejected under these conditions and a single wear rate can’t predict its durability. These are the first specific wear rate measurements for a basketball outsole compound, and they show that a simple experiment can reveal the trend. Measuring temperature is the priority for future work.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <a class="pill-link" href="home.html">← Back to portfolio</a>
+      </footer>
+    </main>
+
+    <!-- Enlarged photo view -->
+    <div class="lightbox" hidden>
+      <button class="lightbox__close" type="button" aria-label="Close">×</button>
+      <img class="lightbox__img" src="" alt="">
+      <p class="lightbox__caption"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="../Js/page.js"></script>
+</body>
+</html>

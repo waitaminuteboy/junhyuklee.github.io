@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Plate Patent Research | Junhyuk Lee</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="../Css/page.css" />
+</head>
+<body>
+    <div class="progress" aria-hidden="true"></div>
+    <a class="back-link" href="home.html">← Back to portfolio</a>
+
+    <main class="page">
+      <!-- Hero -->
+      <header class="hero">
+        <p class="eyebrow reveal">Featured project · Force plate development · Patent research</p>
+        <h1 class="hero__title reveal">A more affordable yet accurate force plate</h1>
+        <p class="hero__lead reveal">A project initiated by my experience with injury and rehabilitation</p>
+        <ul class="chips reveal">
+          <li>Patent application filed (KIPO)</li>
+          <li>FEM simulation study at KAIST</li>
+          <li>Research proposal (SARC 2026)</li>
+          <li>Prototype built with Holiday Robotics</li>
+          <li>About $2,700 in parts</li>
+        </ul>
+        <a class="scroll-cue reveal" href="#journey">Scroll to explore ↓</a>
+      </header>
+
+      <!-- Journey overview (slide 2) -->
+      <section class="chapter" id="journey">
+        <p class="eyebrow reveal">The journey at a glance</p>
+        <h2 class="chapter__title reveal">Six stages, from injury to prototype</h2>
+        <ol class="journey">
+          <li class="journey__step reveal">
+            <a href="#motivation">
+              <span class="journey__num">01</span>
+              <h3>Personal motivation</h3>
+              <p class="journey__time">Middle school</p>
+              <p>Repeated ankle injuries ended my competitive basketball experience.</p>
+            </a>
+          </li>
+          <li class="journey__step reveal">
+            <a href="#vald">
+              <span class="journey__num">02</span>
+              <h3>Rehabilitation technology</h3>
+              <p class="journey__time">Summer after Grade 9</p>
+              <p>Internship at VALD introduced me to movement assessment.</p>
+            </a>
+          </li>
+          <li class="journey__step reveal">
+            <a href="#concept">
+              <span class="journey__num">03</span>
+              <h3>Hybrid concept</h3>
+              <p class="journey__time">Grade 10 summer through Grade 11</p>
+              <p>I developed a sensor architecture and filed a patent application.</p>
+            </a>
+          </li>
+          <li class="journey__step reveal">
+            <a href="#kaist">
+              <span class="journey__num">04</span>
+              <h3>Simulation study</h3>
+              <p class="journey__time">Spring of Grade 11 (March–June 2026)</p>
+              <p>At KAIST, I compared my concept with two other designs through simulations.</p>
+            </a>
+          </li>
+          <li class="journey__step reveal">
+            <a href="#prototype">
+              <span class="journey__num">05</span>
+              <h3>Physical prototype</h3>
+              <p class="journey__time">Summer after Grade 11 through Grade 12</p>
+              <p>I built my first prototype with engineers at Holiday Robotics, who fabricated the parts.</p>
+            </a>
+          </li>
+          <li class="journey__step reveal">
+            <a href="#testing">
+              <span class="journey__num">06</span>
+              <h3>Further validation</h3>
+              <p class="journey__time">Next stage</p>
+              <p>Prototype built and first static tests done. Shear testing with hanging weights is in progress.</p>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- The instrument (slide 3) -->
+      <section class="chapter" id="instrument">
+        <p class="eyebrow reveal">The instrument</p>
+        <h2 class="chapter__title reveal">What a force plate measures</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="lead reveal">A force plate measures the forces between a person’s feet and the ground during standing, walking, running or jumping.</p>
+            <p class="muted reveal">Most plates only measure how hard you push straight down, and even these cost thousands of dollars. Measuring the knee adduction moment (KAM), a key warning sign for knee osteoarthritis, also needs sideways forces.</p>
+            <div class="stat reveal">
+              <span class="stat__number">$30,000–50,000</span>
+              <span class="stat__label">For a multi-axis plate. A full gait lab for KAM costs over $150,000.</span>
+            </div>
+          </div>
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/forceplate/commercial-plate.jpg" alt="A commercial force plate" loading="lazy">
+            <figcaption>A commercial force plate</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Why it matters (slide 4) -->
+      <section class="chapter" id="why">
+        <p class="eyebrow reveal">Why it matters</p>
+        <h2 class="chapter__title reveal">Who needs this measurement</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="lead reveal">I wanted to understand why injuries like mine kept coming back. I learned that how forces act on a joint can help explain repeated injuries and ways to prevent them. One widely studied measure is the knee adduction moment (KAM), which indicates how much load falls on the inner side of the knee during walking.</p>
+            <div class="stat reveal">
+              <span class="stat__number"><span data-count="365">365</span> <span class="stat__small">million</span></span>
+              <span class="stat__label">people worldwide live with knee osteoarthritis</span>
+            </div>
+            <p class="muted reveal">Most of them are older adults, and KAM is one of the best-studied predictors of whose knee will get worse. Measuring KAM requires a force plate that measures sideways forces. This usually means using a gait lab costing over $150,000, which few clinics can afford.</p>
+          </div>
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/forceplate/design-comparison.png" alt="Diagram comparing a bolted single-axis plate with the hybrid design" loading="lazy">
+            <figcaption>Left: a low-cost plate with four bolted single-axis load cells. Right: the hybrid design from the study, with rounded contacts at the corners and a 6-axis sensor in the center. The prototype uses a 3-axis sensor.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Personal motivation (slide 5) -->
+      <section class="chapter" id="motivation">
+        <p class="eyebrow reveal">Personal motivation · Middle school</p>
+        <h2 class="chapter__title reveal">Basketball and repeated injury</h2>
+        <div class="split">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/basketball.jpg" alt="Playing competitive basketball in an indoor gym" loading="lazy">
+            <figcaption>Competitive basketball in middle school</figcaption>
+          </figure>
+          <div class="split__text">
+            <div class="stat reveal">
+              <span class="stat__number"><span class="stat__small">About</span> <span data-count="15">15</span></span>
+              <span class="stat__label">Ankle injuries</span>
+            </div>
+            <p class="lead reveal">I played competitive basketball in middle school, but I had to give up on the sport due to repeated injuries.</p>
+            <p class="muted reveal">Eventually accessory navicular syndrome further complicated my recovery. The standard rehabilitation approaches I tried did not help as much as I had hoped.</p>
+            <p class="strong-line reveal">What I needed was a way to see how load moved through my joints.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALD (slide 6) -->
+      <section class="chapter" id="vald">
+        <p class="eyebrow reveal">Job shadowing · Australia · Summer after Grade 9</p>
+        <h2 class="chapter__title reveal">Rehabilitation engineering at VALD</h2>
+        <p class="lead lead--wide reveal">At VALD, I saw how mechanical engineering and sensing technology could help professionals assess movement beyond what observation alone can show.</p>
+        <div class="gallery gallery--vald">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/vald-internship.jpg" alt="Working at a laptop during the VALD internship" loading="lazy">
+            <figcaption>Internship at VALD</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/vald-facility.jpg" alt="A rehabilitation facility with force plates on the floor" loading="lazy">
+            <figcaption>A new perspective on the rehabilitation process</figcaption>
+          </figure>
+        </div>
+        <p class="strong-line reveal">But these tools rarely reach the clinics where older patients are treated.</p>
+      </section>
+
+      <!-- The design problem (slide 7) -->
+      <section class="chapter" id="problem">
+        <p class="eyebrow reveal">The design problem</p>
+        <h2 class="chapter__title reveal">Reducing the cost of a force plate</h2>
+        <div class="compare">
+          <article class="compare__card reveal">
+            <h3>Research-grade force plate</h3>
+            <p>Research-grade plates put an expensive multi-axis sensor at each of the four corners, and that drives the price.</p>
+            <svg class="sensor-map" viewBox="0 0 200 200" role="img" aria-label="Diagram: an expensive multi-axis sensor at each of the four corners">
+              <rect class="sensor-map__plate" x="15" y="15" width="170" height="170" rx="10" />
+              <circle class="sensor sensor--expensive" cx="40" cy="40" r="13" />
+              <circle class="sensor sensor--expensive" cx="160" cy="40" r="13" />
+              <circle class="sensor sensor--expensive" cx="40" cy="160" r="13" />
+              <circle class="sensor sensor--expensive" cx="160" cy="160" r="13" />
+            </svg>
+            <figure class="figure">
+              <img src="../../Images/forceplate/research-grade-plate.jpg" alt="A person standing on a research-grade force plate" loading="lazy">
+            </figure>
+          </article>
+          <article class="compare__card compare__card--mine reveal">
+            <h3>My approach</h3>
+            <p>One multi-axis sensor in the center reads sideways force. Low-cost single-axis cells at the corners read vertical force.</p>
+            <svg class="sensor-map" viewBox="0 0 200 200" role="img" aria-label="Diagram: one multi-axis sensor in the center, with low-cost single-axis cells at the four corners">
+              <rect class="sensor-map__plate" x="15" y="15" width="170" height="170" rx="10" />
+              <circle class="sensor sensor--cheap" cx="40" cy="40" r="11" />
+              <circle class="sensor sensor--cheap" cx="160" cy="40" r="11" />
+              <circle class="sensor sensor--expensive" cx="100" cy="100" r="13" />
+              <circle class="sensor sensor--cheap" cx="40" cy="160" r="11" />
+              <circle class="sensor sensor--cheap" cx="160" cy="160" r="11" />
+            </svg>
+            <figure class="figure figure--contain">
+              <img src="../../Images/forceplate/hybrid-diagram.png" alt="Diagram of the hybrid design: single-axis buttons at the corners and a 6-axis sensor in the center" loading="lazy">
+            </figure>
+          </article>
+        </div>
+        <p class="legend reveal">
+          <span><i class="legend__dot legend__dot--expensive"></i>Expensive multi-axis sensor</span>
+          <span><i class="legend__dot legend__dot--cheap"></i>Low-cost single-axis load cell</span>
+          <span class="legend__note">Simplified top view</span>
+        </p>
+      </section>
+
+      <!-- Hybrid concept (slide 8) -->
+      <section class="chapter" id="concept">
+        <p class="eyebrow reveal">Theoretical design · Grade 10 summer through Grade 11</p>
+        <h2 class="chapter__title reveal">A hybrid sensor architecture</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="accent-line reveal">Only one multi-axis sensor at the center to cut the cost</p>
+            <p class="strong-line reveal">Low-cost single-axis load cells at the four corners</p>
+            <p class="muted reveal">I wanted to reserve the more expensive sensor for the center and use cheaper sensors elsewhere. The question was whether this layout could still measure everything KAM needs.</p>
+          </div>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/fem-hybrid.jpg" alt="A simulation of the hybrid force plate design on a monitor" loading="lazy">
+            <figcaption>Simulating the hybrid design</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Patent application (slide 9) -->
+      <section class="chapter" id="patent">
+        <p class="eyebrow reveal">Design development · Patent application</p>
+        <h2 class="chapter__title reveal">Formalizing the concept</h2>
+        <p class="lead lead--wide reveal">I filed a patent application (No. 10-2026-0015062) with the Korean Intellectual Property Office while developing the theoretical design.</p>
+        <div class="gallery gallery--2">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/patent-meeting-1.jpg" alt="Reviewing a prior art search report with the patent attorney" loading="lazy">
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/patent-meeting-2.jpg" alt="The patent attorney explaining the application on a whiteboard" loading="lazy">
+          </figure>
+        </div>
+        <p class="caption-accent reveal">Meetings with the patent attorney to prepare the patent application for my hybrid force plate design</p>
+        <p class="callout reveal"><span>Title of invention</span>Multi-Axis Force Measuring Apparatus</p>
+      </section>
+
+      <!-- KAIST (slide 10) -->
+      <section class="chapter" id="kaist">
+        <p class="eyebrow reveal">KAIST · Spring of Grade 11 (March–June 2026)</p>
+        <h2 class="chapter__title reveal">Testing the idea before manufacture</h2>
+        <div class="split split--wide-media">
+          <div class="gallery gallery--kaist">
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/kaist-professor.jpg" alt="Working on simulations with Professor Yong-Jin Yoon" loading="lazy">
+            </figure>
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/kaist-lab-sign.jpg" alt="Sign for KAIST's Creative and Challenging Research Lab and the Just Do It Lab" loading="lazy">
+            </figure>
+          </div>
+          <div class="split__text">
+            <p class="lead reveal">Professor Yong-Jin Yoon supervised my work at KAIST’s Just Do It Laboratory. I used finite element method (FEM) simulations to examine my proposed plate.</p>
+            <p class="muted reveal">The simulations let me examine the design before starting the physical build.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparative FEM study (slide 11) -->
+      <section class="chapter" id="fem">
+        <p class="eyebrow reveal">Comparative FEM study</p>
+        <h2 class="chapter__title reveal">Comparing three force plate designs</h2>
+        <ol class="designs">
+          <li class="designs__item reveal"><span>Research-grade design<small>Four multi-axis sensors at the corners</small></span></li>
+          <li class="designs__item reveal"><span>Low-cost design<small>Four bolted single-axis load cells</small></span></li>
+          <li class="designs__item designs__item--mine reveal"><span>My hybrid design<small>Single-axis corners and one multi-axis center</small></span></li>
+        </ol>
+        <div class="split">
+          <p class="lead reveal">Professor Yoon guided the comparison. I prepared the CAD models, specified the materials, loads and supports, and determined which settings to keep consistent across all three designs.</p>
+          <div class="gallery gallery--2 gallery--portrait">
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/cad-model-1.jpg" alt="A CAD model of a force plate on screen" loading="lazy">
+            </figure>
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/cad-model-2.jpg" alt="Setting up a force plate simulation in CAD software" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simulation workflow (slide 12) -->
+      <section class="chapter" id="workflow">
+        <p class="eyebrow reveal">Simulation workflow</p>
+        <h2 class="chapter__title reveal">Working through the simulation results</h2>
+        <div class="split">
+          <div class="split__text">
+            <p class="lead reveal">A simulation took several hours at times. Once it finished, I reviewed the output before deciding what to change for the next run.</p>
+            <p class="muted reveal">I checked how the settings I had chosen affected the predicted behavior. Before trusting a run, I checked that the support forces added up to the load I applied (500 N sideways, 866 N down).</p>
+          </div>
+          <figure class="figure figure--narrow reveal">
+            <img src="../../Images/forceplate/simulation-data.jpg" alt="A spreadsheet of force reaction results from the simulations" loading="lazy">
+            <figcaption>Force reaction results from a simulation run</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Simulation findings (slide 13) -->
+      <section class="chapter chapter--dark" id="findings">
+        <p class="eyebrow reveal">Simulation findings</p>
+        <h2 class="chapter__title reveal">What I learned from the simulations</h2>
+        <p class="lead lead--wide reveal">A simple crosstalk model (Eq. 1) put the vertical force error at a 22° load near 0.2% for the hybrid and 2% for a bolted design. In ANSYS with a 30° load, corner friction took only 2.75 to 3.58% of the sideways force.</p>
+        <p class="mint-line reveal">The simulation results placed my hybrid design between the research-grade and low-cost alternatives. I wrote a research proposal (SARC 2026) based on it and began making a prototype to see how the design would behave outside the simulation.</p>
+        <p class="reveal">I still needed measurements from actual hardware to assess accuracy.</p>
+      </section>
+
+      <!-- Simulation results (slide 14) -->
+      <section class="chapter" id="results">
+        <p class="eyebrow reveal">Simulation results</p>
+        <h2 class="chapter__title reveal">The hybrid plate in numbers</h2>
+        <div class="gallery gallery--2 gallery--charts">
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/forceplate/chart-vertical-error.png" alt="Line chart: vertical force error rises to 2.02% at 22 degrees for the bolted plate but stays near 0.2% for the hybrid" loading="lazy">
+            <figcaption>Vertical force error under an angled load, from the crosstalk model (Eq. 1). A bolted plate reaches 2.02% at 22°. The hybrid stays near 0.2%.</figcaption>
+          </figure>
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/forceplate/chart-shear-loss.png" alt="Bar chart: sideways force lost to the corners stays between 2.75% and 3.58% across a twentyfold friction range" loading="lazy">
+            <figcaption>Sideways force lost to corner friction (FEM) stays between 2.75% and 3.58%, even when friction changes twentyfold, so the center sensor alone reads within 3.6%.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Mechanical design (slide 15) -->
+      <section class="chapter" id="design">
+        <p class="eyebrow reveal">Mechanical design</p>
+        <h2 class="chapter__title reveal">From concept to buildable design</h2>
+        <div class="split split--wide-media">
+          <figure class="figure figure--contain reveal">
+            <img src="../../Images/forceplate/exploded-view.png" alt="Exploded view of the hybrid five-sensor force plate prototype" loading="lazy">
+            <figcaption>Exploded view of the hybrid five-sensor force plate prototype</figcaption>
+          </figure>
+          <div class="split__text">
+            <p class="lead reveal">The simulation model became a design that could be built: a 600 × 400 mm aluminum top and base plate, four corner load cells on hardened rounded studs, and a 3-axis sensor in the center on a steel riser.</p>
+            <p class="muted reveal">Each corner can be raised a little at a time, so all four press on the plate with about 50 N before a test.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Physical prototype (slide 16) -->
+      <section class="chapter" id="prototype">
+        <p class="eyebrow reveal">Physical prototype · Summer after Grade 11 through Grade 12</p>
+        <h2 class="chapter__title reveal">Building the actual force plate prototype</h2>
+        <div class="split split--wide-media">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/prototype-plates.jpg" alt="Two machined aluminum plates for the force plate prototype" loading="lazy">
+            <figcaption>Machined plates for the prototype</figcaption>
+          </figure>
+          <div class="split__text">
+            <p class="lead reveal">After the simulations, I began making a prototype to test the idea in real life.</p>
+            <p class="muted reveal">I supplied the CAD drafts, and Holiday Robotics engineers made the parts. With their help, I developed the electrical circuits, mechanical design, and sensor layout. I also helped assemble the prototype and programmed its readout.</p>
+          </div>
+        </div>
+        <div class="drawings reveal">
+          <figure class="figure figure--contain">
+            <img src="../../Images/forceplate/cad-top-plate.png" alt="CAD drawing of the 600 by 400 mm top plate" loading="lazy">
+          </figure>
+          <figure class="figure figure--contain">
+            <img src="../../Images/forceplate/cad-corner-stud.png" alt="CAD drawing of the corner stud" loading="lazy">
+          </figure>
+        </div>
+        <p class="caption-accent reveal">CAD drawings: top plate and corner stud</p>
+      </section>
+
+      <!-- Prototype build (slide 17) -->
+      <section class="chapter" id="build">
+        <p class="eyebrow reveal">Prototype build</p>
+        <h2 class="chapter__title reveal">Building the hybrid plate</h2>
+        <div class="gallery gallery--4 gallery--portrait">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/corner-load-cells.jpg" alt="Four single-axis load cells" loading="lazy">
+            <figcaption class="caption-accent">Four 500 kg single-axis load cells for the corners</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/rounded-stud.jpg" alt="A hardened rounded stud on top of a load cell" loading="lazy">
+            <figcaption class="caption-accent">Hardened rounded stud on a corner load cell</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/center-sensor-riser.jpg" alt="The center sensor mounted on a steel riser" loading="lazy">
+            <figcaption class="caption-accent">Center 3-axis sensor on its steel riser</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/load-cells-on-base.jpg" alt="Corner load cells bolted to the base plate" loading="lazy">
+            <figcaption class="caption-accent">Corner load cells mounted on the base plate</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Assembly (slide 18) -->
+      <section class="chapter" id="assembly">
+        <p class="eyebrow reveal">Prototype development</p>
+        <h2 class="chapter__title reveal">Assembly and instrumentation</h2>
+        <div class="gallery gallery--3 gallery--portrait">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/center-corner-sensors.jpg" alt="The center sensor and a corner load cell on the base plate" loading="lazy">
+            <figcaption class="caption-accent">Center and corner sensors</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/base-plate-feet.jpg" alt="The base plate with leveling feet" loading="lazy">
+            <figcaption class="caption-accent">Base plate and leveling feet</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/bonding-pads.jpg" alt="Mixing adhesive to bond contact pads under the top plate" loading="lazy">
+            <figcaption class="caption-accent">Bonding the contact pads under the top plate</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Prototype testing (slide 19) -->
+      <section class="chapter" id="testing">
+        <p class="eyebrow reveal">Prototype testing</p>
+        <h2 class="chapter__title reveal">First measurements on the real plate</h2>
+        <div class="gallery gallery--3 gallery--portrait">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/assembled-plate.jpg" alt="The assembled force plate wired to its electronics box" loading="lazy">
+            <figcaption class="caption-accent">Assembled plate</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/readout-breadboard.jpg" alt="Eight amplifier boards wired to a microcontroller on a breadboard" loading="lazy">
+            <figcaption class="caption-accent">8-channel readout</figcaption>
+          </figure>
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/live-readout.jpg" alt="Live force readings shown on a phone" loading="lazy">
+            <figcaption class="caption-accent">Live readout over Wi-Fi</figcaption>
+          </figure>
+        </div>
+        <div class="results">
+          <p class="results__heading reveal">Static tests <span>Before full calibration</span></p>
+          <div class="results__grid">
+            <div class="result-card reveal">
+              <span class="result-card__value result-card__value--long">76.2 &amp; 76.7 kg</span>
+              <span class="result-card__label">76.0 kg person standing on one leg</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value"><span data-count="0.7" data-decimals="1">0.7</span>%</span>
+              <span class="result-card__label">Repeatability between two trials</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value">About <span data-count="60">60</span>%</span>
+              <span class="result-card__label">Load carried by the center sensor</span>
+            </div>
+            <div class="result-card reveal">
+              <span class="result-card__value">10 Hz</span>
+              <span class="result-card__label">Sampling: 8 channels at 10 Hz, 24-bit</span>
+            </div>
+          </div>
+        </div>
+        <p class="muted muted--wide reveal">Building it raised problems the simulation never showed. The corner load cells had M16 holes instead of M12, so a nut seat was made for the studs. The amplifiers turned out to be very sensitive: breadboards and loose jumper wires added resistance and picked up noise. Redoing the wiring and moving most connections to proper connectors brought the noise down to a few hundredths of a newton.</p>
+      </section>
+
+      <!-- Readout code (slide 20) -->
+      <section class="chapter" id="code">
+        <p class="eyebrow reveal">Readout code</p>
+        <h2 class="chapter__title reveal">Readout code written in Python</h2>
+        <div class="split split--wide-media">
+          <div class="code-shots">
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/code-read-amplifiers.png" alt="Python code that reads all eight amplifiers" loading="lazy">
+              <figcaption>Reading all eight amplifiers on one shared clock line</figcaption>
+            </figure>
+            <figure class="figure reveal">
+              <img src="../../Images/forceplate/code-knee-moment.png" alt="Python code that calculates the knee moment" loading="lazy">
+              <figcaption>Turning the center of pressure and knee position into the knee moment</figcaption>
+            </figure>
+          </div>
+          <div class="split__text">
+            <p class="lead reveal">The plate's readout code is written in Python (MicroPython) and runs on the ESP32. It reads all eight 24-bit amplifiers at the same moment, removes spikes, and shows live forces, center of pressure and knee moment on a phone over Wi-Fi. Each test is saved as a CSV row.</p>
+            <p class="muted reveal">The amplifier boards and the microcontroller are off-the-shelf parts. The wiring, the code that reads them and the phone readout were built for this project.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Test data (slide 21) -->
+      <section class="chapter" id="data">
+        <p class="eyebrow reveal">Test data</p>
+        <h2 class="chapter__title reveal">Standing on one leg</h2>
+        <figure class="figure figure--contain reveal">
+          <img src="../../Images/forceplate/test-data.png" alt="Charts showing where the load went on the plate and the force on each sensor for two trials" loading="lazy">
+        </figure>
+        <p class="lead lead--wide lead--spaced reveal">A 76.0 kg person stood on the left leg for 10 seconds, twice. The plate read 76.7 kg and 76.2 kg, and the center of pressure moved about 3 mm between the two trials.</p>
+        <div class="next reveal">
+          <p class="eyebrow">Next steps toward measuring KAM</p>
+          <p class="lead">Measure the knee center position above the plate, record single-leg stance with the knee-moment readout, then compare barefoot, shoes and insoles. After that, calibrate sideways force with the pulley rig and move to faster electronics for walking.</p>
+        </div>
+      </section>
+
+      <!-- Lessons and next steps (slide 22) -->
+      <section class="chapter" id="lessons">
+        <p class="eyebrow reveal">Lessons and next steps</p>
+        <h2 class="chapter__title reveal">What the hardware taught me</h2>
+        <div class="split split--media-narrow">
+          <figure class="figure reveal">
+            <img src="../../Images/forceplate/plate-and-electronics.jpg" alt="The force plate next to its open electronics box" loading="lazy">
+          </figure>
+          <div class="split__text">
+            <div class="reveal">
+              <h3 class="subhead">What the simulation did not show</h3>
+              <p class="muted">The simulation assumed perfect joints, and the real plate did not have them. Tiny gaps where parts were bolted together moved under load: after a 15 kg child stepped off, the center sensor still held 5 to 8 N of sideways force. Moving the plate changed the preload on one corner by almost 90 N, and the amplifiers and load cells needed time to warm up before the readings settled.</p>
+            </div>
+            <div class="reveal">
+              <h3 class="subhead">Next experiments</h3>
+              <p class="muted">The pulley rig, weighted sled and reference load cell are ready. Next I will apply known sideways forces to see how much the corners really take, and measure the knee adduction moment in single-leg stance.</p>
+            </div>
+            <div class="reveal">
+              <h3 class="subhead">Limits of this readout</h3>
+              <p class="muted">The readout runs at 10 Hz, enough for standing tests. Walking is usually recorded at about 1,000 Hz, and noise grows as the readout gets faster, so the next version needs a faster low-noise amplifier on a properly designed circuit board.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion (slide 23) -->
+      <section class="chapter chapter--dark" id="conclusion">
+        <p class="eyebrow reveal">Conclusion</p>
+        <h2 class="chapter__title reveal">Prototype parts cost about <span data-count="2700" data-prefix="$">$2,700</span></h2>
+        <p class="lead lead--wide reveal">In parts for a plate that already reads vertical force and center of pressure, and is built to read sideways force and the static knee moment once calibration is done.</p>
+        <div class="costs reveal" aria-label="Cost comparison">
+          <div class="cost">
+            <span class="cost__label">This prototype (parts)</span>
+            <span class="cost__track"><span class="cost__bar cost__bar--mine" style="--w: 1.8%"></span></span>
+            <span class="cost__value">$2,700</span>
+          </div>
+          <div class="cost">
+            <span class="cost__label">Research 3-axis plate</span>
+            <span class="cost__track"><span class="cost__bar" style="--w: 33.3%"></span></span>
+            <span class="cost__value">$30,000 to $50,000</span>
+          </div>
+          <div class="cost">
+            <span class="cost__label">Gait lab needed for KAM</span>
+            <span class="cost__track"><span class="cost__bar" style="--w: 100%"></span></span>
+            <span class="cost__value">over $150,000</span>
+          </div>
+        </div>
+        <p class="reveal">It is not a clinical tool yet. It reads at 10 Hz, has only been tested standing still, and the sideways-force channel is not calibrated yet. But it showed that one multi-axis sensor and four low-cost load cells can be built into a plate that reads body weight within about 1% before calibration, for less than a tenth of the price of a single research plate.</p>
+        <p class="mint-line mint-line--last reveal">Whether this layout can measure everything KAM needs is the question I started with, and the next tests will answer it.</p>
+      </section>
+
+      <footer class="page-footer">
+        <a class="pill-link" href="home.html">← Back to portfolio</a>
+      </footer>
+    </main>
+
+    <!-- Enlarged photo view -->
+    <div class="lightbox" hidden>
+      <button class="lightbox__close" type="button" aria-label="Close">×</button>
+      <img class="lightbox__img" src="" alt="">
+      <p class="lightbox__caption"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="../Js/page.js"></script>
+</body>
+</html>
